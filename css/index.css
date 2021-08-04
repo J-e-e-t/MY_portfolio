@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    border: 0px;
+    background-color: beige;
+}
+
+nav{
+    background-color:rgb(54, 53, 49);
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    flex-direction: row-reverse;
+}
+
+nav li{
+    padding: 15px 15px;
+    color:rgb(226, 213, 213);
+    list-style-type: none;
+
+}
