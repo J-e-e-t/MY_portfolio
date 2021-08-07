@@ -12,7 +12,7 @@ a, a:hover, a:focus, a:active {
 nav {
     background-color: rgb(54, 53, 49);
     display: flex;
-    padding: 10px 20px 10px 20px;
+    padding: 1px 2px 1px 2px;
     flex-direction: row-reverse;
     margin-bottom: 0px;
 }
@@ -30,15 +30,17 @@ nav li:hover{
 
 .upper_block {
     position: relative;
+    justify-content:space-evenly;
     margin-top: 5%;
     left: 5%;
     right: 0%;
     display: flex;
     flex-direction: row;
-    flex-shrink: 1;
-    height: 450px;
+    flex-wrap: wrap;
+    height: 35em;
     width: 90%;
     justify-content: centre;
+    align-items: center;
     background-color: lightcoral;
     background-image: -moz-linear-gradient(top, lightcoral, lightyellow);
     background-image: -webkit-linear-gradient(top, lightcoral, lightyellow);
@@ -46,34 +48,42 @@ nav li:hover{
 }
 
 .upper_block h1 {
-    flex-shrink: 1;
+    
     text-align: center;
-    position: relative;
-    top: 30%;
+    position: flex;
+
 }
 
 .upper_block h3 {
     flex-shrink: 1;
     text-align: center;
-    position: relative;
-    top: 35%;
+    /* position: relative; */
+    /* top: 35%; */
 }
 
-#myface {
-    flex-shrink: 1;
+.myface{
     display: flex;
+    flex-shrink: inherit;
+    margin:0em 0em;
+
+}
+#myface {
+    margin: auto ;
+    display: flex;
+    align-self: center;
+    justify-content:flex-start;
     flex-direction: row;
     border-radius: 50%;
-    top: 20px;
-    left: 80px;
-    position: relative;
-    height: 400px;
-    width: 400px;
+    justify-content: flex-start;
+    padding: 2em;
+    max-width:60%;
+    min-width: 30%;
+    height:auto;
 }
 
 #myface:hover{
     scale:1.1;
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.05);
 }
 
 .icons a:hover{
@@ -82,16 +92,22 @@ nav li:hover{
 }
 
 .myinfo {
-    width: 70%;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 2em 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    
 }
 
 .about_me {
     display: flexbox;
-    padding-top: 50px;
-    margin-top: 0px;
+    padding-top: 5em;
+    margin-top: 0em;
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 70px;
+    padding-bottom: 5em;
     background-image: -moz-linear-gradient(bottom, lightcoral, lightyellow);
     background-image: -webkit-linear-gradient(bottom, lightcoral, lightyellow);
 }
@@ -103,7 +119,7 @@ nav li:hover{
 .about_me p {
     font-size: large;
     font-style: oblique;
-    word-spacing: 1px;
+    word-spacing: 1em;
     padding-left: 35%;
     padding-right: 35%;
     text-align: center;
@@ -112,7 +128,7 @@ nav li:hover{
 footer{
     display: flex;
     background-color: rgb(54, 53, 49) ;
-    margin-top: 25px;
+    margin-top: 2em;
     justify-content:space-around;
     
 }
